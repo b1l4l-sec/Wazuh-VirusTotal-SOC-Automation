@@ -17,6 +17,10 @@ Wazuh Manager (Kali Linux)
 └── Agent 003 — Windows 10
 ```
 
+### Lab Environment
+
+![Machines](screenshots/Machines.png)
+
 **Detection pipeline:**
 
 ```
@@ -51,6 +55,26 @@ Average time from file creation to quarantine: under 60 seconds.
 ### Email Alert Integration
 
 `custom-email-alert.sh` runs on the manager as a Wazuh integration. It parses the alert JSON, builds an HTML email with incident details and VirusTotal analysis data, and sends it through Postfix configured as a Gmail SMTP relay.
+
+---
+
+## Results
+
+### Dashboard — Alert Overview
+
+![Dashboard Alert](screenshots/dashboard-alert.png)
+
+### Dashboard — Alert Details
+
+![Dashboard Alert Details](screenshots/dashboard-alert-details.png)
+
+### Professional HTML Email Alert
+
+![Email Alert](screenshots/email-alert.png)
+
+### File Quarantined Successfully
+
+![Quarantine](screenshots/quarantine.png)
 
 ---
 
@@ -154,7 +178,9 @@ Expected results:
 ├── docs/
 │   └── email-setup.md
 └── screenshots/
+    ├── Machines.png
     ├── dashboard-alert.png
+    ├── dashboard-alert-details.png
     ├── email-alert.png
     └── quarantine.png
 ```
